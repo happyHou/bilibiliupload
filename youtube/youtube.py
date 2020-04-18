@@ -45,8 +45,14 @@ def uploadfile():
             time.sleep(60)
 
 
+# 抓取整个Challen
 # for i in range(221, 435, 70):
 #     youtube_dl_commond = "youtube-dl -f best -ciw -o \"%(title)s.%(ext)s\" -v --write-thumbnail --playlist-start {start} --playlist-end {end} https://www.youtube.com/channel/UCunxpZtwW2TN2dk0uoXuNtw"
 #     youtube_dl_commond = youtube_dl_commond.format(start=i, end=i + 70)
 #     os.system(youtube_dl_commond)
 #     uploadfile()
+
+# # 抓取单个视频
+    youtube_dl_commond = "youtube-dl -f best -ciw -o \"%(title)s.%(ext)s\" -v --write-thumbnail https://www.youtube.com/watch\?v\=_fc_TLg3eQ4"
+    os.system(youtube_dl_commond)
+    uploadfile()

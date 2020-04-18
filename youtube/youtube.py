@@ -11,8 +11,7 @@ sys.path.append(bilibiliPath)
 from bilibiliupload import *
 video_dir = '/Users/happyhou/onedrive/OneDrive - vlity.ac.id/11'
 b = Bilibili()
-
-login_status = b.login('18253940579', '39$XG0G^3s')
+login_status = b.login('18253940579', 'G^%d8JC0Uu')
 print("Login:", login_status)
 
 
@@ -46,8 +45,8 @@ def uploadfile():
             time.sleep(60)
 
 
-for i in range(221, 435, 70):
-    youtube_dl_commond = "youtube-dl -f best -ciw -o \"%(title)s.%(ext)s\" -v --write-thumbnail --playlist-start {start} --playlist-end {end} https://www.youtube.com/channel/UCunxpZtwW2TN2dk0uoXuNtw"
-    youtube_dl_commond = youtube_dl_commond.format(start=i, end=i + 70)
-    os.system(youtube_dl_commond)
-    uploadfile()
+# for i in range(221, 435, 70):
+#     youtube_dl_commond = "youtube-dl -f best -ciw -o \"%(title)s.%(ext)s\" -v --write-thumbnail --playlist-start {start} --playlist-end {end} https://www.youtube.com/channel/UCunxpZtwW2TN2dk0uoXuNtw"
+#     youtube_dl_commond = youtube_dl_commond.format(start=i, end=i + 70)
+#     os.system(youtube_dl_commond)
+#     uploadfile()
